@@ -35,4 +35,4 @@ const character = {
 }
 
 console.log(character.message('I like basketball'))   // Harvey Specter says: I like basketball
-character.message_2(`I like being a lawyer`)    // undefined says: I like being a lawyer ← arrow functions 'forget' the execution context. Best practice is to use it outside the object
+console.log(character.message_2(`I like being a lawyer`))    // undefined says: I like being a lawyer ← arrow functions 'forget' the execution context. Best practice is to use it outside the object
